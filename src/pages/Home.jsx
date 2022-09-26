@@ -1,4 +1,7 @@
 import {useState,useEffect} from "react";
+import MovieCard from "../components/MovieCard";
+
+import "../components/CSS/MovieList.css";
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -15,6 +18,7 @@ const data = await res.json();
 set_topMovies(data.results)
 
 
+
 }
 
 
@@ -27,14 +31,23 @@ useEffect(() => {
 
 }, [])
 
+console.log(topMovies)
+
 
 return(
-    <section className="container"> 
-    <h2 className="title"> Best Movies </h2>
-    <article className="movies_container">
+    <section className="container_geral"> 
+    <div className="title">
+    <h2> Best Movies </h2>
+    <p>The best reviews off all time!</p>
+    </div>
+    <article className="container_movies">
+    
     {topMovies.length <= 0 ? <p>Loading...</p> : topMovies.map((i) => {
-        return <p>Título Filme: {i.title}</p>
+        return <MovieCard key={i.id} movie={i}/>
         })}
+
+
+ 
    
     </article>
     </section>

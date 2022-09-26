@@ -1,0 +1,63 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5% 50px 5%;
+}
+nav form{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    }
+
+nav input{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: solid 1px white;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    width: 80%;
+}
+
+
+nav input:focus{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav button {
+    margin-left: 17px;
+    border-radius: 50%;
+    border: none;
+    width: 31px;
+    height: 31px;
+    overflow: hidden;
+    background: #f7d354;
+    cursor: pointer;
+
+}
+
+nav button:hover{
+background: none;
+transition: 0.2;
+}
+
+nav button:hover svg{
+color:#f7d354;
+transition: 0.8;
+}
+
+nav button svg {
+font-size: 35px;
+transition: 0.8s
+}
+
+nav .margin{
+height:5vw;
+background: white;
+margin-bottom: 30px;
+}
