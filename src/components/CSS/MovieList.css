@@ -10,7 +10,8 @@ flex-direction: column;
     font-style: italic;
 }
 .container_geral > .title h2 {
-    font-size: 5.5rem;
+
+    font-size: 5vw;
 
 }
 
@@ -70,3 +71,42 @@ background:rgb(230, 230, 163);
 
 
 
+@media(max-width:1190px){
+
+    .container_geral > .title h2 {
+
+        font-size: 4.5rem;
+    
+    }
+
+    .container_movies > div {
+        max-width: 30%;
+        margin: 0 5px 3% 5px;
+    }
+    .container_movies {
+        padding: 2% 2%;
+    
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:664px){
+
+    .container_geral > .title h2 {
+
+        font-size: 3.5rem;
+    
+    }
+
+    .container_movies > div {
+        max-width: 45%;
+        margin: 0 5px 3% 5px;
+    }
+    .container_movies {
+        padding: 2% 1%;
+    
+    }
+}

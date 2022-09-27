@@ -16,7 +16,7 @@ const Navbar = () =>{
    if(!search) {
     return
    }else {
-  navigate(`/search?q=${search}`);
+  navigate(`/search?valor=${search}`);
   setSearch("");
    }
   }
@@ -37,7 +37,7 @@ const Navbar = () =>{
           </form>
         
       </nav>
-      <div className={style.margin}></div>
+      <div className={style.margin_nav}></div>
       </>
     )}
     

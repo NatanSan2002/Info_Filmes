@@ -8,6 +8,8 @@ box-sizing: border-box;
 body{
 background:black;
 color:white;
+padding: 0 20px;
+
 }
 
 a{
