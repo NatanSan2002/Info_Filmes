@@ -8,6 +8,7 @@ import Movie from "./pages/Movie";
 import Search from "./pages/Search";
 
 import './index.css';
+import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       
     </Routes>
+    <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 )
