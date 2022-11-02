@@ -1,4 +1,4 @@
-
+web: npm run dev
 
 heroku buildpacks: set heroku/nodejs -a <info_movies>
 
