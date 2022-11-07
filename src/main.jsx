@@ -1,5 +1,3 @@
-const port = process.env.PORT || 3000;
-
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
